@@ -4,6 +4,7 @@
 
 - 🎓 B.Tech, Electronics & Communication Engineering, BIT Mesra (Class of 2027) — ranked 8th/226 (top 4%)
 - 🔭 Currently exploring applied ML, model robustness, and AI systems outside my core ECE track
+- 🖥️ Also build web apps with Django when I need to ship something a model can live behind
 - 🌱 Certified in MLOps, Vertex AI, Responsible AI, and AI Security (Google Cloud)
 - 💬 Ask me about SVMs, noise robustness in classifiers, or competitive programming
 - 📫 Reach me here on GitHub, or check [Codeforces / CodeChef](https://codeforces.com/profile/qirat9923) (`qirat9923`)
@@ -25,7 +26,7 @@ Linear regression model predicting house prices from size, bedrooms, and locatio
 
 ## 🛠️ Toolbox
 
-`Python` · `scikit-learn` · `NLP` · `Streamlit` · `Google Cloud (Vertex AI, MLOps)`
+`Python` · `scikit-learn` · `NLP` · `Streamlit` · `Django` · `Google Cloud (Vertex AI, MLOps)`
 
 ## 📊 GitHub Stats
 
