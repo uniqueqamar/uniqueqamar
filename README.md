@@ -6,7 +6,7 @@ Third-year Electronics & Communication Engineering undergraduate at BIT Mesra, w
 - Focused on applied ML, model robustness, and AI systems, largely self-directed outside my core coursework
 - Build web applications with Django when a model needs a working interface, not just a notebook
 - Certified in MLOps, Vertex AI, Responsible AI, and AI Security through Google Cloud
-- Competitive programming on [Codeforces / CodeChef](https://codeforces.com/profile/qirat9923) (`qirat9923`)
+- Competitive programming on [Codeforces / CodeChef]
 - Happy to talk about SVMs, noise robustness in classifiers, or competitive programming — reach out here on GitHub
 
 ---
