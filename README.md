@@ -4,7 +4,7 @@ Github is the Pinterest of coding <3 I love it here
 ---
 
 
-## Featured Work
+## Sit back, Relax, lemme walk you through some of my work. Enjoy!!
 
 **[CIFAR-10 CNN Classifier](https://github.com/uniqueqamar/cifar10-cnn-classifier)**
 Convolutional neural network trained from scratch on CIFAR-10 using TensorFlow/Keras. Test accuracy improved from 77.48% to 80.28% through label smoothing and learning-rate tuning. Includes a Streamlit app for live inference and a per-class breakdown that surfaces where the model still struggles (notably frog/cat/dog/bird confusion) — deployed and live.
