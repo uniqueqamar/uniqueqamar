@@ -1,14 +1,6 @@
 # Qamareen
 
-Third-year Electronics & Communication Engineering undergraduate at BIT Mesra, working toward a career in applied machine learning. Currently seeking internships and research programs where I can contribute to model development, robustness, and AI systems work.
-
-- B.Tech, Electronics & Communication Engineering, BIT Mesra — Class of 2027, ranked 8th of 226 (top 4%)
-- Focused on applied ML, model robustness, and AI systems, largely self-directed outside my core coursework
-- Build web applications with Django when a model needs a working interface, not just a notebook
-- Certified in MLOps, Vertex AI, Responsible AI, and AI Security through Google Cloud
-- Competitive programming on [Codeforces / CodeChef]
-- Happy to talk about SVMs, noise robustness in classifiers, or competitive programming — reach out here on GitHub
-
+Third-year Electronics & Communication Engineering undergraduate at BIT Mesra, working toward a career in applied machine learning. Currently seeking internships where I can contribute to model development, robustness, and AI systems work.
 ---
 
 ## Featured Work
