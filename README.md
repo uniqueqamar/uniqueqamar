@@ -3,6 +3,7 @@
 Github is the Pinterest of coding <3 I love it here
 ---
 
+<img width="735" height="412" alt="_" src="https://github.com/user-attachments/assets/7579b9fd-2764-4113-9bf9-0df060b99d8f" />
 
 
 
