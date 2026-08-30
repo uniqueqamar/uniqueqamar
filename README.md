@@ -1,7 +1,8 @@
 # Qamareen
 ---
-Hi there, I'm just a girl, sitting in front of a laptop, asking him to lover her. -iykyk
+Github is the Pinterest of coding <3 I love it here
 ---
+
 
 ## Featured Work
 
