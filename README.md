@@ -1,6 +1,6 @@
 # Qamareen
 ---
-Third-year Electronics & Communication Engineering undergraduate
+Hi there, I'm just a girl, sitting in front of a laptop, asking him to lover her. -iykyk
 ---
 
 ## Featured Work
