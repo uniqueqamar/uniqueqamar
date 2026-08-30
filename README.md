@@ -1,6 +1,6 @@
 # Qamareen
-
-Third-year Electronics & Communication Engineering undergraduate at BIT Mesra, working toward a career in applied machine learning. Currently seeking internships where I can contribute to model development, robustness, and AI systems work.
+---
+Third-year Electronics & Communication Engineering undergraduate
 ---
 
 ## Featured Work
