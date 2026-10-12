@@ -1,32 +1,31 @@
-# Qamareen
----
-Github is the Pinterest of coding <3 I love it here
----
+# Qamareen Fatima
 
-<img width="735" height="412" alt="_" src="https://github.com/user-attachments/assets/7579b9fd-2764-4113-9bf9-0df060b99d8f" />
+GitHub is the Pinterest of coding <3 I love it here.
 
+I'm an Electronics and Communication Engineering student at **BIT Mesra (B.Tech, 2028)**, interested in **software engineering and machine learning**. I enjoy building Python backends, interactive applications, and ML experiments that make their results and limitations easy to inspect.
 
+<img width="735" height="412" alt="Profile artwork" src="https://github.com/user-attachments/assets/7579b9fd-2764-4113-9bf9-0df060b99d8f" />
 
-## Sit back, Relax, lemme walk you through some of my work. Enjoy!!
+## Come explore my work
 
-**[CIFAR-10 CNN Classifier](https://github.com/uniqueqamar/cifar10-cnn-classifier)**
-Convolutional neural network trained from scratch on CIFAR-10 using TensorFlow/Keras. Test accuracy improved from 77.48% to 80.28% through label smoothing and learning-rate tuning. Includes a Streamlit app for live inference and a per-class breakdown that surfaces where the model still struggles (notably frog/cat/dog/bird confusion) — deployed and live.
+| Project | What to explore |
+|---|---|
+| [Alzera](https://github.com/uniqueqamar/Alzera) | A clinical decision-support prototype using FastAPI and Next.js: longitudinal patient views, prioritization, and clinician accept/override workflows. Uses synthetic data; it is not a diagnostic system. |
+| [Email Spam Detector](https://github.com/uniqueqamar/Email_Spam_Detector) | TF-IDF and Multinomial Naive Bayes, with Streamlit and React + FastAPI interfaces. Evaluation uses the SMS Spam Collection dataset; results do not establish performance on real emails. |
+| [CIFAR-10 CNN Classifier](https://github.com/uniqueqamar/cifar10-cnn-classifier) | A TensorFlow/Keras CNN with a Streamlit inference app and per-class error analysis. The checked-in classification report records **80.28% test accuracy**; see the repository for evaluation limitations. |
+| [SVM Robustness Analysis](https://github.com/uniqueqamar/svm-robustness-analysis) | A handwritten-digit classification experiment exploring performance under Gaussian noise and per-digit F1 scores. |
+| [Housing Price Prediction](https://github.com/uniqueqamar/Housing-Price-Prediction-System) | A Streamlit regression demo with reproducible holdout evaluation, one-hot preprocessing and a training-mean baseline. Dataset provenance limitations are documented. |
 
-**[SVM Robustness Analysis](https://github.com/uniqueqamar/svm-robustness-analysis)**
-Handwritten digit classifier (scikit-learn, sklearn Digits dataset) built to study robustness rather than chase peak accuracy — measuring how performance degrades under Gaussian noise, with a per-digit F1 breakdown. My most research-oriented project; results from this work fed into my Amazon ML Summer School application.
+## Tools I work with
 
-**[Email Spam Detector](https://github.com/uniqueqamar/Email_Spam_Detector)**
-End-to-end NLP pipeline combining TF-IDF vectorization with a Multinomial Naive Bayes classifier, wrapped in a Streamlit app for real-time predictions — deployed and live. Deployed on Streamlit and another version that uses FASTAPI.
+- **Languages:** Python, C++, TypeScript
+- **Backend and interfaces:** Django, FastAPI, Streamlit, React / Next.js
+- **ML and data:** scikit-learn, TensorFlow/Keras, Pandas, NumPy, Matplotlib
+- **Development:** Git, GitHub, SQL
 
----
+I'm working toward SWE/ML internships and building projects I can explain from the data and model to the API and user interface.
 
-## My Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/https://www.instagram.com/qammy._.fatima/) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/https://www.linkedin.com/in/qamareen-fatima-a95348236/) [![Pinterest](https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white)](https://pinterest.com/https://www.pinterest.com/ThatGirlFromDowntown14/) 
+## Find me elsewhere
 
-#  My Tech Stack:
-![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white) ![Vercel](https://img.shields.io/badge/vercel-%23000000.svg?style=for-the-badge&logo=vercel&logoColor=white) ![Angular.js](https://img.shields.io/badge/angular.js-%23E23237.svg?style=for-the-badge&logo=angularjs&logoColor=white) ![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white) ![FastAPI](https://img.shields.io/badge/FastAPI-005571?style=for-the-badge&logo=fastapi) ![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white) ![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+[LinkedIn](https://www.linkedin.com/in/qamareen-fatima-a95348236/) · [Instagram](https://www.instagram.com/qammy._.fatima/) · [Pinterest](https://www.pinterest.com/ThatGirlFromDowntown14/)
 
----
-[![](https://komarev.com/ghpvc/?username=uniqueqamar&icon=0&color=0)](https://visitcount.itsvg.in)
-
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
