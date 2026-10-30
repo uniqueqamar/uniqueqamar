@@ -1,6 +1,6 @@
 # Qamareen Fatima
 
-GitHub is the Pinterest of coding <3 I love it here.
+GitHub is the Pinterest of programming <3 I love it here.
 
 I'm an Electronics and Communication Engineering student at **BIT Mesra (B.Tech, 2028)**, interested in **software engineering and machine learning**. I enjoy building Python backends, interactive applications, and ML experiments that make their results and limitations easy to inspect.
 
