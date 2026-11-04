@@ -1,5 +1,14 @@
 # Contribution and learning log
 
+## 2026-11-04 — Memory-bounded expanded-shard checksum verification
+
+- **Draft PR:** [landsat-cloud-reconstruction #5](https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/5)
+- **Commits:** [hash helper](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/2a8e0740f37faffded3fcef114db5153141c3702), [validator integration](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/69c58c6d075e755fbee16649442c90d7678e8389), [tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/be9522d03258051fa43dca6f5c0491e454f8452f).
+- **Change:** Replace whole-file `read_bytes()` SHA-256 hashing with incremental 1 MiB reads in expanded-shard integrity checks; preserve exact digest results.
+- **Verification:** Five isolated local pytest cases passed (0.07 s), including bounded-read guard. Full repository integration tests, actual expanded data and CI not yet verified.
+- **Concepts:** Streaming algorithms, memory complexity, file integrity, regression tests.
+- **Follow-up:** Run `python -m pytest -q tests/test_file_hash.py` and `python validate_data.py` with real expanded data before review. Existing draft PRs #1–#4 remain separate; demo unchanged.
+
 This log records published work and its verification status. Draft pull requests are not merged contributions.
 
 ## 2026-11-03 — Mask-aware evaluation safeguards
