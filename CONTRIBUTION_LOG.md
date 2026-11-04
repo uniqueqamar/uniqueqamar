@@ -31,3 +31,12 @@ This log records published work and its verification status. Draft pull requests
 1. Why is dividing masked error by zero invalid even when the model predicts the clear image perfectly?
 2. For a batch with two entirely clear samples and one masked sample, what should the masked MAE denominator count?
 3. Why should a validation error message identify the split rather than silently returning a score of zero?
+
+## 2026-11-05 — Expanded shard validation performance and integrity
+
+- **Draft PR:** [landsat-cloud-reconstruction #6](https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/6)
+- **Commits:** [helper](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/92d101670f3810d89e7ceaf48d138c9dc035fe27), [tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/ca3f13069a9e13502b750f31a1e909b5da654d45), [integration](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/a3767beec9f33240e41a44b2a788b161c32ef1d6)
+- **Change:** Group expanded-index records by compressed shard, decode each array once per shard, and validate every indexed patch. Reject negative/out-of-range indices, inconsistent array dimensions, invalid reflectance, and invalid QA flags. Geographic split and checksum logic retained.
+- **Verification:** Five synthetic pytest tests passed in isolated directory (0.07 seconds). Full checkout suite, actual expanded data and CI not verified; no benchmark claimed.
+- **Concepts:** I/O amortization, compressed array loading, index bounds, data-integrity assertions, regression testing.
+- **Follow-up:** Run committed tests and real `validate_data.py` on a complete checkout, measure runtime and peak RAM; inspect interaction with draft PR #5 before merging. Browser demo unchanged; no review requested.
