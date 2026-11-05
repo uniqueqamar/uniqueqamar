@@ -40,3 +40,12 @@ This log records published work and its verification status. Draft pull requests
 - **Verification:** Five synthetic pytest tests passed in isolated directory (0.07 seconds). Full checkout suite, actual expanded data and CI not verified; no benchmark claimed.
 - **Concepts:** I/O amortization, compressed array loading, index bounds, data-integrity assertions, regression testing.
 - **Follow-up:** Run committed tests and real `validate_data.py` on a complete checkout, measure runtime and peak RAM; inspect interaction with draft PR #5 before merging. Browser demo unchanged; no review requested.
+
+## 2026-11-05 — Spectral reconstruction diagnostics (draft PR #7)
+
+- **Draft PR:** https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/7
+- **Commits:** [metrics](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/56f9e59d780dd6762ea23527e170e80d80507582), [audit CLI](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/e2ca3a7a840e830bdb9e12519f1d37f22c71f1f7), [tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/9e55f04912f07780f7f20efd5d6e1cce11ec82b8).
+- **Change:** Added masked reflectance MAE/RMSE/PSNR, per-band error, spectral angle mapper, NDVI error, and mean-fill comparison on identical masks. Complements open PR #1 without changing the evaluation CLI.
+- **Verification:** Six isolated synthetic pytest tests passed (0.08 s), Python compilation passed. Full repo, real validation checkpoint, CI, unseen-scene evaluation and training **not performed**. No improved model accuracy claimed.
+- **Next:** Run spectral audit on held-out validation patches, inspect worst bands/land cover, obtain genuinely geographically distinct scenes and temporal inputs, train and benchmark candidate v3 on validation only. Existing demo and access unchanged.
+- **Learning:** Spectral angle, NDVI band indexing, masked denominators, geographic distribution shift.
