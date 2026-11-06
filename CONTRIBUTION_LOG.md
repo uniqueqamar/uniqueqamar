@@ -49,3 +49,11 @@ This log records published work and its verification status. Draft pull requests
 - **Verification:** Six isolated synthetic pytest tests passed (0.08 s), Python compilation passed. Full repo, real validation checkpoint, CI, unseen-scene evaluation and training **not performed**. No improved model accuracy claimed.
 - **Next:** Run spectral audit on held-out validation patches, inspect worst bands/land cover, obtain genuinely geographically distinct scenes and temporal inputs, train and benchmark candidate v3 on validation only. Existing demo and access unchanged.
 - **Learning:** Spectral angle, NDVI band indexing, masked denominators, geographic distribution shift.
+
+## 2026-11-06 — Prevent invalid all-cloud mean-fill audit
+
+- **Existing draft PR updated:** https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/7 (no duplicate PR).
+- **Commits:** [guard](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/c0b643b286fcabe4db6af3b5aeb16e65c1c08c61), [tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/9cb2948635941b26a7305f5808a9c40022b4f38b).
+- **Issue:** A fully cloudy patch has no observed pixels, so the existing mean-fill denominator clamped to 1 and returned a fabricated zero baseline. The audit now raises a clear error; tests cover fully cloudy and partly clear cases.
+- **Verification:** Code and test commits published, but committed tests and full integration **not executed** this run. Real Landsat validation, model training, geographic generalization and browser demo unchanged. Run `python -m pytest -q tests/test_spectral_audit.py tests/test_quality_metrics.py` and audit on actual validation patches before review.
+- **Concepts:** Missing-data baselines, denominator guards, regression testing.
