@@ -57,3 +57,12 @@ This log records published work and its verification status. Draft pull requests
 - **Issue:** A fully cloudy patch has no observed pixels, so the existing mean-fill denominator clamped to 1 and returned a fabricated zero baseline. The audit now raises a clear error; tests cover fully cloudy and partly clear cases.
 - **Verification:** Code and test commits published, but committed tests and full integration **not executed** this run. Real Landsat validation, model training, geographic generalization and browser demo unchanged. Run `python -m pytest -q tests/test_spectral_audit.py tests/test_quality_metrics.py` and audit on actual validation patches before review.
 - **Concepts:** Missing-data baselines, denominator guards, regression testing.
+
+## 2026-11-07 — Spatial interpolation baseline (draft PR #8)
+
+- **Draft PR:** https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/8
+- **Commits:** [interpolator](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/d88ebbf29583a34ac60d10472a6b77f118ecbb86), [comparison CLI](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/903fb9596639d40a2614a8366c79dfd417bfa12f), [interpolator tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/44313923d5bf6ea4d4f6d315cf7fb7440df3352f), [comparison tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/7d505fc31d245e4ed34c26e5ba4061073e525e4f).
+- **Change:** Added four-neighbor spatial interpolation baseline, exact clear-pixel preservation, all-cloud safeguards and a validation comparison against mean filling. Complements existing draft PRs #1 and #7.
+- **Verification:** Eight synthetic CPU pytest tests passed in 1.11 seconds with PyTorch 2.10.0. Full repo integration, actual Landsat validation and cross-region tests not run. No higher model accuracy claimed.
+- **Next:** Compare v2 against mean and spatial baselines on validation; profile M2 8GB; obtain distinct geographic scenes before training v3. No changes to deployed demo, training weights or held-out test set.
+- **Learning:** Diffusion interpolation, boundary conditions, pixel-mask invariants and geographic distribution shift.
