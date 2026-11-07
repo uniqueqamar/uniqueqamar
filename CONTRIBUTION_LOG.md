@@ -66,3 +66,11 @@ This log records published work and its verification status. Draft pull requests
 - **Verification:** Eight synthetic CPU pytest tests passed in 1.11 seconds with PyTorch 2.10.0. Full repo integration, actual Landsat validation and cross-region tests not run. No higher model accuracy claimed.
 - **Next:** Compare v2 against mean and spatial baselines on validation; profile M2 8GB; obtain distinct geographic scenes before training v3. No changes to deployed demo, training weights or held-out test set.
 - **Learning:** Diffusion interpolation, boundary conditions, pixel-mask invariants and geographic distribution shift.
+
+## 2026-11-07 — Paired validation numerical-safety follow-up (draft PR #1)
+
+- **PR:** https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/1
+- **Commits:** [finite-value guards](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/5616c43eb2027729a4044c5c2277abb931f50cbc), [regression tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/ac77ce6a906219d84eaa4d069da4c53a9c00f378).
+- **Change:** Reject NaN/Inf observed inputs, proxy targets and model predictions before serializing misleading validation metrics; check sample ID count when loader length is known. Three tests added to the existing draft rather than opening a duplicate PR.
+- **Verification:** Reproduced the underlying numerical issue in local PyTorch 2.10.0: NaN propagates into reported aggregates. **Committed regression suite not executed:** container could not resolve github.com to clone the PR branch. No real checkpoint/data evaluation, cross-region claim, model training, CI or demo deployment. Follow-up required before merge.
+- **Concepts:** Finite-value invariants, fail-fast evaluation, paired sample attribution.
