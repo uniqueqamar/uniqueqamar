@@ -74,3 +74,13 @@ This log records published work and its verification status. Draft pull requests
 - **Change:** Reject NaN/Inf observed inputs, proxy targets and model predictions before serializing misleading validation metrics; check sample ID count when loader length is known. Three tests added to the existing draft rather than opening a duplicate PR.
 - **Verification:** Reproduced the underlying numerical issue in local PyTorch 2.10.0: NaN propagates into reported aggregates. **Committed regression suite not executed:** container could not resolve github.com to clone the PR branch. No real checkpoint/data evaluation, cross-region claim, model training, CI or demo deployment. Follow-up required before merge.
 - **Concepts:** Finite-value invariants, fail-fast evaluation, paired sample attribution.
+
+## 2026-11-08 — Streaming evaluation sample-ID integrity (existing draft PR #1)
+
+- **PR:** https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/1 (still draft; no review requested).
+- **Commits:** [guard](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/b9c77b4920fda6e3562deb4f14c9a66d6cda4290), [regression tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/d0d3356e1e9424056dc524eeeda4e94a5bff3e18).
+- **Bug reproduced:** When a one-pass iterable lacks `__len__`, a short `sample_ids` list previously raised `IndexError`, while an overlong list was silently accepted, potentially corrupting per-patch provenance. Verified the failure and fix using three local isolated Python checks.
+- **Change:** Check ID count while consuming the loader and after iteration; add two synthetic tests for short/long lists. Existing weighted metrics, data splits, model checkpoints and deployed demo unchanged.
+- **Limits:** Full committed PyTorch test module, CI and real Landsat validation not executed; no commit status checks were reported for the branch. No new reconstruction accuracy claimed.
+- **Next:** Run `python -m pytest -q tests/test_evaluate.py` from the PR branch, evaluate real validation pairs, reconcile overlapping drafts before merging; keep geographic test data untouched.
+- **Learning:** One-pass iterators vs sized sequences, provenance alignment, fail-fast validation.
