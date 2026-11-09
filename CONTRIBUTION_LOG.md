@@ -84,3 +84,13 @@ This log records published work and its verification status. Draft pull requests
 - **Limits:** Full committed PyTorch test module, CI and real Landsat validation not executed; no commit status checks were reported for the branch. No new reconstruction accuracy claimed.
 - **Next:** Run `python -m pytest -q tests/test_evaluate.py` from the PR branch, evaluate real validation pairs, reconcile overlapping drafts before merging; keep geographic test data untouched.
 - **Learning:** One-pass iterators vs sized sequences, provenance alignment, fail-fast validation.
+
+## 2026-11-09 — Guard unsupported optical-only prediction inputs (draft PR #9)
+
+- **PR:** https://github.com/uniqueqamar/landsat-cloud-reconstruction/pull/9
+- **Commits:** [integration](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/c34dffd78ee97bf04f29384bde68ca1bca681ebe), [helper](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/e176668a652136a6c45f4b332c5d8d00bfa9a8e7), [tests](https://github.com/uniqueqamar/landsat-cloud-reconstruction/commit/4ea10f8933f094f8117338f95bfe15ab359cd043).
+- **Why:** An all-cloud input has no visible context for the residual generator's observed-pixel mean, so accepting it can mislead users. Fully clear inputs need no reconstruction.
+- **Change:** QA coverage and input-shape validation integrated into `predict.py`; six synthetic regression tests.
+- **Verification:** Isolated helper/test suite 6 passed in 0.08 s; Python compile passed. Full repository, real imagery, CI and demo not verified. No quality improvement claimed.
+- **Next:** Run full tests and real-patch smoke test; prioritize validation of open PRs before merging, then geographically independent model evaluation.
+- **Learning:** Input-domain checks, optical observability and regression tests.
